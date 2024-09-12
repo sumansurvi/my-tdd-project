@@ -1,9 +1,12 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class MathService {
+  constructor() {}
 
-  constructor() { }
+  addNumbers(a: number, b: number): number {
+    return a + b;
+  }
 }
