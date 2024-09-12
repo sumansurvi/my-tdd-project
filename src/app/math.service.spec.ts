@@ -1,8 +1,8 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed } from "@angular/core/testing";
 
-import { MathService } from './math.service';
+import { MathService } from "./math.service";
 
-describe('MathService', () => {
+describe("MathService", () => {
   let service: MathService;
 
   beforeEach(() => {
@@ -10,7 +10,9 @@ describe('MathService', () => {
     service = TestBed.inject(MathService);
   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
+  it("should add two numbers correctly", () => {
+    // Failing test (there is no addNumbers method yet)
+    const result = service.addNumbers(2, 3);
+    expect(result).toBe(5);
   });
 });
